@@ -19,6 +19,7 @@
         <include>Weather</include>
         <include>Logob</include>
         
+        <include>CurrentPlaylist</include>
         
         
 <!--Jukebox Menu by lithium-->
@@ -467,7 +468,7 @@
                 <height>82</height>
                 <texturenofocus  border="4">floor_button_t.png</texturenofocus>
                 <texturefocus border="4">floor_buttonfo.png</texturefocus>
-                <onclick>ActivateWindow(Favorites)</onclick>
+                <onclick>ActivateWindow(Favourites)</onclick>
             </control>
             <control type="image">
                 <description>Favorites icon</description>
