@@ -303,18 +303,121 @@
         </control>
        
 
+    <!-- Jukebox Visualization -->
+
+        <control type="group" id="55520">
+            <left>365</left>
+            <top>50</top>
+            <width>550</width>
+            <height>550</height>
+            <visible>Player.HasAudio</visible>
+
+            <!-- Now Playing Cover -->
+            <control type="image">
+                <visible>true</visible>
+                <description>cover image</description>
+                <left>175</left>
+                <top>180</top>
+                <width>200</width>
+                <height>200</height>
+                <info>MusicPlayer.Cover</info>
+                <aspectratio></aspectratio>
+                <bordertexture>ThumbBorderGrey.png</bordertexture>
+                <bordersize>1</bordersize>
+            </control>
+
+            <!-- Now Playing Artist -->
+            <control type="label">
+                <visible>true</visible>
+                <left>110</left>
+                <top>110</top>
+                <width>330</width>
+                <height>60</height>
+                <font>font13_title</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <info>MusicPlayer.Artist</info>
+                <scroll>false</scroll>
+                <wrapmultiline>true</wrapmultiline>
+            </control>
+
+            <!-- Now Playing Title -->
+            <control type="label">
+                <visible>true</visible>
+                <left>110</left>
+                <top>385</top>
+                <width>330</width>
+                <height>60</height>
+                <font>font13_title</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <info>MusicPlayer.Title</info>
+                <scroll>false</scroll>
+                <wrapmultiline>true</wrapmultiline>
+            </control>
+
+            <!-- Time -->
+            <control type="label">
+                <visible>true</visible>
+                <left>110</left>
+                <top>450</top>
+                <width>250</width>
+                <height>100</height>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <label>[1]</label>
+                <info>musicplayer.time</info>
+                <visible>Player.HasAudio</visible>
+            </control>
+            <control type="label">
+                <visible>true</visible>
+                <left>150</left>
+                <top>450</top>
+                <width>250</width>
+                <height>100</height>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <label>/</label>
+                <visible>Player.HasAudio</visible>
+            </control>
+            <control type="label">
+                <visible>true</visible>
+                <left>190</left>
+                <top>450</top>
+                <width>250</width>
+                <height>100</height>
+                <font>font13</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>center</align>
+                <label>[1]</label>
+                <info>musicplayer.duration</info>
+                <visible>Player.HasAudio</visible>
+            </control>
+
+
+        </control>
 
 
 
         <include>CommonBottomBar</include>
         
         <!-- Song/radio info -->
+<!--         
         <control type="group">
             <posy>150r</posy>
             <include>MusicPlayerTitle</include>
             <include>RadioStationName</include>
         </control>
-        
+ -->        
         <include>HomeRecentlyAddedInfo</include>
         <include>BottomNowPLaying</include>
       
