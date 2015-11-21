@@ -102,6 +102,8 @@
 				<ondown>300</ondown>
 			</control>
 		</control>
+
+		<!-- Home -->
 		<control type="grouplist" id="100">
 			<description>control area</description>
 			<posx>40</posx>
@@ -115,6 +117,7 @@
 			<onleft>2</onleft>
 			<onright>30</onright>
 			<visible>Skin.String(SkinSettings,1)</visible>
+
 			<control type="label" id="101">
 				<height>50</height>
 				<width>920</width>
@@ -124,6 +127,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
+
+			<!-- Show Radio Station Name -->
 			<control type="radiobutton" id="111">
 				<description>Show RadioTitle</description>
 				<height>55</height>
@@ -137,8 +142,10 @@
 				<onclick>Skin.ToggleSetting(HideHomeButtonRadioStationName)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonRadioStationName)</selected>
 			</control>
+
+			<!-- Show Now Playing -->
 			<control type="radiobutton" id="102">
-				<description>Show MusicPlayerTitle</description>
+				<description>Show NowPlayingInfo</description>
 				<height>55</height>
 				<width>920</width>
 				<font>font24_title</font>
@@ -146,10 +153,12 @@
 				<textcolor>black</textcolor>
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>Show Music Player Title</label>
-				<onclick>Skin.ToggleSetting(HideHomeButtonMusicPlayerTitle)</onclick>
-				<selected>!Skin.HasSetting(HideHomeButtonMusicPlayerTitle)</selected>
+				<label>Show Now Playing Info</label>
+				<onclick>Skin.ToggleSetting(HideHomeNowPlaying)</onclick>
+				<selected>!Skin.HasSetting(HideHomeNowPlaying)</selected>
 			</control>
+
+			<!-- Show Clock -->
 			<control type="radiobutton" id="103">
 				<description>Show Clock</description>
 				<height>55</height>
@@ -163,20 +172,8 @@
 				<onclick>Skin.ToggleSetting(HideHomeButtonTime)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonTime)</selected>
 			</control>
-			<!--<control type="radiobutton" id="104">
-				<description>Hide TVShows</description>
-				<height>55</height>
-				<width>920</width>
-				<font>font13</font>
-				<textcolor>black</textcolor>
-				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>$LOCALIZE[20343]</label>
-				<onclick>Skin.ToggleSetting(HideHomeButtonTVShows)</onclick>
-				<selected>!Skin.HasSetting(HideHomeButtonTVShows)</selected>
-				<enable>Library.HasContent(TVShows)</enable>
-		</control>-->
-		
+
+			<!-- Show Weather -->		
 			<control type="radiobutton" id="105">
 				<description>Show Weather info and button</description>
 				<height>55</height>
@@ -200,64 +197,67 @@
 				<textcolor>black</textcolor>
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>Show LogoBackground</label>
+				<label>Show Logo Background</label>
 				<onclick>Skin.ToggleSetting(HideHomeButtonLogob)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonLogob)</selected>
 			</control>
 			        
-					
-					<control type="radiobutton" id="107">
-						<height>55</height>
-			        	<width>920</width>
-						<font>font24_title</font>
-						<label>Custom Background</label>
-						<textcolor>black</textcolor>
-						<focusedcolor>blue</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(UseCustomBackground)</onclick>
-						<selected>Skin.HasSetting(UseCustomBackground)</selected>
-					</control>
-					
-					<control type="button" id="108">
-						<height>55</height>
-			        	<width>920</width>
-						<font>font24_title</font>
-						<label>Custom Background Path:</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(CustomBackgroundPath)][/COLOR]</label2>
-						<textcolor>black</textcolor>
-						<focusedcolor>blue</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetImage(CustomBackgroundPath)</onclick>
-						<enable>Skin.HasSetting(UseCustomBackground)</enable>
-					</control>
-					<control type="radiobutton" id="109">
-						<height>55</height>
-			        	<width>920</width>
-						<font>font24_title</font>
-						<label>Custom Logo</label>
-						<textcolor>black</textcolor>
-						<focusedcolor>blue</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(UseCustomLogo)</onclick>
-						<selected>Skin.HasSetting(UseCustomLogo)</selected>
-					</control>
-					<control type="button" id="110">
-						<height>55</height>
-			        	<width>920</width>
-						<font>font24_title</font>
-						<label>Custom Logo Path:</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(CustomLogoPath)][/COLOR]</label2>
-						<textcolor>black</textcolor>
-						<focusedcolor>blue</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetImage(CustomLogoPath)</onclick>
-						<enable>Skin.HasSetting(UseCustomLogo)</enable>
-					</control>
+			<!-- Custom Background -->		
+			<control type="radiobutton" id="107">
+				<height>55</height>
+      	<width>920</width>
+				<font>font24_title</font>
+				<label>Custom Background</label>
+				<textcolor>black</textcolor>
+				<focusedcolor>blue</focusedcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<onclick>Skin.ToggleSetting(UseCustomBackground)</onclick>
+				<selected>Skin.HasSetting(UseCustomBackground)</selected>
+			</control>
+			<control type="button" id="108">
+				<height>55</height>
+       	<width>920</width>
+				<font>font24_title</font>
+				<label>Custom Background Path:</label>
+				<label2>[COLOR=selected]$INFO[Skin.String(CustomBackgroundPath)][/COLOR]</label2>
+				<textcolor>black</textcolor>
+				<focusedcolor>blue</focusedcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<onclick>Skin.SetImage(CustomBackgroundPath)</onclick>
+				<enable>Skin.HasSetting(UseCustomBackground)</enable>
+			</control>
+
+			<!-- Custom Logo -->
+			<control type="radiobutton" id="109">
+				<height>55</height>
+	     	<width>920</width>
+				<font>font24_title</font>
+				<label>Custom Logo</label>
+				<textcolor>black</textcolor>
+				<focusedcolor>blue</focusedcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+	      <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<onclick>Skin.ToggleSetting(UseCustomLogo)</onclick>
+				<selected>Skin.HasSetting(UseCustomLogo)</selected>
+			</control>
+			<control type="button" id="110">
+				<height>55</height>
+	     	<width>920</width>
+				<font>font24_title</font>
+				<label>Custom Logo Path:</label>
+				<label2>[COLOR=selected]$INFO[Skin.String(CustomLogoPath)][/COLOR]</label2>
+				<textcolor>black</textcolor>
+				<focusedcolor>blue</focusedcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+		    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<onclick>Skin.SetImage(CustomLogoPath)</onclick>
+				<enable>Skin.HasSetting(UseCustomLogo)</enable>
+			</control>
 		</control>
+
+		<!-- Setting Buttons -->
 		<control type="grouplist" id="200">
 			<description>control area</description>
 			<posx>40</posx>
@@ -273,20 +273,21 @@
 			<visible>Skin.String(SkinSettings,2)</visible>
 			
 			<control type="radiobutton" id="201">
-				<description>Button 2 Show Navigation</description>
+				<description>first item</description>
 				<height>55</height>
 				<width>920</width>
 				<font>font24_title</font>
 				<focusedcolor>blue</focusedcolor>
 				<textcolor>black</textcolor>
-				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>Show Navigation Button 2</label>
-				<onclick>Skin.ToggleSetting(HideHomeButtonNavigation)</onclick>
-				<selected>!Skin.HasSetting(HideHomeButtonNavigation)</selected>
+				<texturefocus border="0,2,0,2">menuitemnf.png</texturefocus>
+				<texturenofocus border="0,2,0,2">menuitemnf.png</texturenofocus>
+				<label>Show File Manager Button</label>
+				<onclick>skin.togglesetting(HideHomeButtonFileManager)</onclick>
+				<selected>!skin.hassetting(HideHomeButtonFileManager)</selected>
 			</control>
+
 			<control type="radiobutton" id="202">
-				<description>Button 2 Show Pictures</description>
+				<description>second item</description>
 				<height>55</height>
 				<width>920</width>
 				<font>font24_title</font>
@@ -294,13 +295,13 @@
 				<textcolor>black</textcolor>
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>Show Pictures Button 2</label>
-				<onclick>Skin.ToggleSetting(HideHomeButtonPictures)</onclick>
-				<selected>!Skin.HasSetting(HideHomeButtonPictures)</selected>
+				<label>Show Favorites Button</label>
+				<onclick>Skin.ToggleSetting(HideHomeButtonFavorites)</onclick>
+				<selected>!Skin.HasSetting(HideHomeButtonFavorites)</selected>
 			</control>
-			
+
 			<control type="radiobutton" id="203">
-				<description>Button 3 Show Radio FM</description>
+				<description>third item</description>
 				<height>55</height>
 				<width>920</width>
 				<font>font24_title</font>
@@ -308,10 +309,12 @@
 				<textcolor>black</textcolor>
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<label>Show Radio FM Button 3</label>
-				<onclick>Skin.ToggleSetting(HideHomeButtonRadio)</onclick>
-				<selected>!Skin.HasSetting(HideHomeButtonRadio)</selected>
+				<label>Show Programs Button</label>
+				<onclick>Skin.ToggleSetting(HideHomeButtonPrograms)</onclick>
+				<selected>!Skin.HasSetting(HideHomeButtonPrograms)</selected>
 			</control>
+
+		<!--
 			<control type="radiobutton" id="204">
 				<description>Button 3 Show Favourites</description>
 				<height>55</height>
@@ -351,6 +354,7 @@
 				<onclick>Skin.ToggleSetting(HideHomeButtonConnect3g)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonConnect3g)</selected>
 			</control>
+		-->
 			
 			<!--<control type="label" id="205">
 				<height>50</height>
