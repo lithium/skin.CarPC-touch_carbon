@@ -26,7 +26,7 @@
 
     <!-- Center Image (first to draw under buttons) --> 
         
-        <control type="image">
+     <!--    <control type="image">
             <description>Normal Default Logo Image</description>
             <posx>440</posx>
             <posy>147</posy>
@@ -36,7 +36,7 @@
             <texture>logo.png</texture>
             <visible>![Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath))]</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
-        </control>
+        </control> -->
         <control type="image">
             <description>User Set Logo Image</description>
             <posx>440</posx>
