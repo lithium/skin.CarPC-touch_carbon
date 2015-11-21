@@ -24,6 +24,8 @@
 			<include>CommonRootView</include> <!-- view id = 50 -->
 			<include>ThumbnailView</include> <!-- view id = 500 -->
 		</control>
+				<include>ScrollBarCommons</include>
+
 		<control type="panel" id="9002">
 			<visible>!Window.IsActive(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>
