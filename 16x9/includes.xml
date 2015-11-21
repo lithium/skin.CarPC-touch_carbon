@@ -1002,6 +1002,8 @@
                     <onclick>ActivateWindow(1115)</onclick>
                     <icon>arrow-big-up.png</icon>
                 </item>
+
+            <!--
                 <item>
                     <label>587</label>
                     <onclick condition="!Container.CanFilterAdvanced">SendClick(19)</onclick>
@@ -1019,6 +1021,12 @@
                 <item>
                     <label>31202</label>
                     <onclick>Container.NextViewMode</onclick>
+                    <icon>icon_view_w.png</icon>
+                </item>
+            -->
+                <item>
+                    <label>31202</label>
+                    <onclick>ActivateWindow(MusicPlaylist)</onclick>
                     <icon>icon_view_w.png</icon>
                 </item>
                 
