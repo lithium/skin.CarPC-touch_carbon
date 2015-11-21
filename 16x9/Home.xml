@@ -335,6 +335,7 @@
                 <height>60</height>
                 <font>font13_title</font>
                 <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -352,6 +353,7 @@
                 <height>60</height>
                 <font>font13_title</font>
                 <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -370,6 +372,7 @@
                 <font>font13</font>
                 <textcolor>white</textcolor>
                 <selectedcolor>selected</selectedcolor>
+                <shadowcolor>black</shadowcolor>
                 <align>center</align>
                 <label>[1]</label>
                 <info>musicplayer.time</info>
@@ -383,6 +386,7 @@
                 <height>100</height>
                 <font>font13</font>
                 <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
                 <align>center</align>
                 <label>/</label>
@@ -396,6 +400,7 @@
                 <height>100</height>
                 <font>font13</font>
                 <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <selectedcolor>selected</selectedcolor>
                 <align>center</align>
                 <label>[1]</label>
