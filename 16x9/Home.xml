@@ -40,7 +40,7 @@
 
     <!-- Left Side Buttons --> 
 
-        <!-- Genre -->
+        <!-- Top 100 -->
         <control type="group" id="4200">
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>20</posx>
@@ -50,18 +50,18 @@
                 <onup>Control.SetFocus(600)</onup>
                 <onleft>Control.SetFocus()</onleft>
 				<onright>Control.SetFocus(4251)</onright>
-                <description>Genre Button</description>
+                <description>Left Side Top Button</description>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>540</width>
                 <height>130</height>
                 <texturenofocus>home_1.png</texturenofocus>
                 <texturefocus border="5">home_1_p.png</texturefocus>
-                <onclick>ActivateWindow(Music,Genres)</onclick>
+                <onclick>ActivateWindow(Music,Top100Songs)</onclick>
             </control>
             
             <control type="image">
-                <description>Genre Button Image</description>
+                <description>Left Side Top Button Image</description>
                 <posx>30</posx>
                 <posy>30</posy>
                 <width>80</width>
@@ -69,12 +69,12 @@
                 <texture>icon_playlistmusic.png</texture>
             </control>
             <control type="label">
-                <description>Genres label</description>
+                <description>Left Side Top Button Label</description>
                 <posx>120</posx>
                 <posy>22</posy>
                 <height>90</height>
                 <width>250</width>
-                <label>Genres</label>
+                <label>Top 100</label>
                 <aligny>center</aligny>
                 <align>left</align>
                 <font>font40_title</font>
@@ -88,7 +88,7 @@
             <posx>20</posx>
             <posy>280</posy>
             <control type="button" id="4221">
-                <description>Artist Button</description>
+                <description>Left Side Middle Button</description>
                 <onup>Control.SetFocus(4201)</onup>
                 <ondown>Control.SetFocus(4221)</ondown>
                 <onright>Control.SetFocus(4261)</onright>
@@ -101,7 +101,7 @@
                 <onclick>ActivateWindow(Music,Artists)</onclick>
             </control>
             <control type="image">
-                <description>Artist Button Image</description>
+                <description>Left Side Middle Button Image</description>
                 <posx>30</posx>
                 <posy>30</posy>
                 <width>80</width>
@@ -109,7 +109,7 @@
                 <texture>icon_playlistmusic.png</texture>
             </control>
             <control type="label">
-                <description>Artist label</description>
+                <description>Left Side Middle Buttton Label</description>
                 <posx>120</posx>
                 <posy>22</posy>
                 <height>90</height>
@@ -122,13 +122,13 @@
             </control>
         </control>
 
-        <!-- Playlist -->
+        <!-- Genres -->
         <control type="group" id="4240">
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>20</posx>
             <posy>430</posy>
             <control type="button" id="4241">
-                <description>Playlists</description>
+                <description>Left Side Bottom Button</description>
                 <onup>Control.SetFocus(4211)</onup>
                 <ondown>Control.SetFocus(4251)</ondown>
                 <onright>Control.SetFocus(4271)</onright>
@@ -138,10 +138,10 @@
                 <height>130</height>
                 <texturenofocus >home_3.png</texturenofocus>
                 <texturefocus border="5">home_3_p.png</texturefocus>
-                <onclick>ActivateWindow(Music,Playlists)</onclick>
+                <onclick>ActivateWindow(Music,Genres)</onclick>
             </control>
             <control type="image">
-                <description>Playlists</description>
+                <description>Left Side Bottom Button Image</description>
                 <posx>30</posx>
                 <posy>30</posy>
                 <width>80</width>
@@ -149,12 +149,12 @@
                 <texture>icon_playlistmusic.png</texture>
             </control>
             <control type="label">
-                <description>Playlists label</description>
+                <description>Left Side Bottom Button Label</description>
                 <posx>120</posx>
                 <posy>22</posy>
                 <height>90</height>
                 <width>250</width>
-                <label>Playlists</label>
+                <label>Genres</label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font40_title</font>
@@ -207,7 +207,7 @@
             </control>
         </control>
        
-        <!-- Programs --> 
+        <!-- Playlists --> 
         <control type="group" id="4260">
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>428r</posx>
@@ -217,7 +217,7 @@
                 <onup>Control.SetFocus(4251)</onup>
                 <ondown>Control.SetFocus(4271)</ondown>
                 <onleft>Control.SetFocus(4211)</onleft>
-                <description>Programs Button</description>
+                <description>Playlists Button</description>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>408</width>
@@ -225,23 +225,23 @@
                 <font>-</font>
                 <texturenofocus >home_5.png</texturenofocus>
                 <texturefocus border="5">home_5_p.png</texturefocus>
-                <onclick>ActivateWindow(Programs)</onclick>
+                <onclick>ActivateWindow(Music,Playlists)</onclick>
             </control>
             <control type="image">
-                <description>Programs Button Image</description>
+                <description>Playlists Button Image</description>
                 <posx>140r</posx>
                 <posy>30</posy>
                 <width>80</width>
                 <height>80</height>
-                <texture>icon_home.png</texture>
+                <texture>icon-music.png</texture>
             </control>
             <control type="label">
-                <description>Programs label</description>
+                <description>Playlists label</description>
                 <posx>40</posx>
                 <posy>22</posy>
                 <height>90</height>
                 <width>250</width>
-                <label>Programs</label>
+                <label>Playlists</label>
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>font40_title</font>
@@ -249,7 +249,7 @@
             </control>
         </control>
        
-        <!-- Favorites --> 
+        <!-- Search --> 
         <control type="group" id="4270">
             <include>Window_OpenClose_Animation_Zoom</include>           
             <posx>560r</posx>
@@ -259,7 +259,7 @@
                 <onup>Control.SetFocus(4261)</onup>
                 <ondown>Control.SetFocus(4281)</ondown>
                 <onleft>Control.SetFocus(4241)</onleft>
-                <description>Shutdown Button</description>
+                <description>search button</description>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>540</width>
@@ -267,23 +267,23 @@
                 <font>-</font>
                 <texturenofocus>home_6.png</texturenofocus>
                 <texturefocus border="5">home_6_p.png</texturefocus>
-                <onclick>ActivateWindow(Favourites)</onclick>
+                <onclick>RunScript(script.globalsearch)</onclick>
             </control>
             <control type="image">
-                <description>Favorites Button Image</description>
+                <description>search Button Image</description>
                 <posx>140r</posx>
                 <posy>30</posy>
                 <width>80</width>
                 <height>80</height>
-                <texture>icon_favourites_w.png</texture>
+                <texture>icon_keypad.png</texture>
             </control>
             <control type="label">
-                <description>Favorites label</description>
-                <posx>170</posx>
+                <description>Search label</description>
+                <posx>200</posx>
                 <posy>22</posy>
                 <height>90</height>
                 <width>250</width>
-                <label>Favorites</label>
+                <label>Search</label>
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>font40_title</font>
