@@ -36,16 +36,16 @@
                 <description>XBMC Logo</description>
                 <posx>10</posx>
                 <posy>1</posy>
-                <width>300</width>
+                <width>50</width>
                 <height>70</height>
-                <aspectratio align="left">keep</aspectratio>
+                <aspectratio align="left">center</aspectratio>
                 <texture>kodi-logo.png</texture>
             </control>
             <control type="button">
                 <posx>1</posx>
                 <posy>1</posy>
-                <width>200</width>
-                <height>76</height>
+                <width>80</width>
+                <height>80</height>
                 <colordiffuse>00FFFFFF</colordiffuse>
                 <onclick>ActivateWindow(1115)</onclick>
             </control>
