@@ -1,9 +1,9 @@
 <includes>
 	<include name="CommonRootView">
 		<control type="panel" id="50">
-			<posx>86</posx>
+			<posx>10</posx>
 			<posy>85</posy>
-			<width>1106</width>
+			<width>1190</width>
 			<height>538</height>
 			<onleft>60</onleft>
 			<onright>60</onright>
@@ -12,11 +12,11 @@
 			<viewtype label="535">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="67" width="1110">
+			<itemlayout height="67" width="1190">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>1106</width>
+					<width>1190</width>
 					<height>67</height>
 					<texture border="4">bara_sus.png</texture>
 					<colordiffuse>95FFFFFF</colordiffuse>
@@ -31,7 +31,7 @@
 				<control type="label">
 					<posx>82</posx>
 					<posy>0</posy>
-					<width>1000</width>
+					<width>1110</width>
 					<height>52</height>
 					<font>font40_title</font>
 					<textcolor>white</textcolor>
@@ -54,11 +54,11 @@
 				</control>-->
 				
 			</itemlayout>
-			<focusedlayout height="67" width="1110">
+			<focusedlayout height="67" width="1190">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>1106</width>
+					<width>1190</width>
 					<height>67</height>
 					<texture border="4">ListFO.png</texture>
 					<include>VisibleFadeEffect</include>
@@ -73,7 +73,7 @@
 				<control type="label">
 					<posx>82</posx>
 					<posy>0</posy>
-					<width>922</width>
+					<width>1110</width>
 					<height>52</height>
 					<font>font40_title</font>
 					<textcolor>black</textcolor>
@@ -83,7 +83,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1072</posx>
+					<posx>1192</posx>
 					<posy>2</posy>
 					<width>300</width>
 					<height>52</height>
@@ -103,220 +103,6 @@
 					<aspectratio align="left">keep</aspectratio>
 					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.StarRating,dark/left_rating/]</texture>
 				</control>-->
-			</focusedlayout>
-		</control>
-	</include>
-	<include name="CommonRootViewVideo">
-		<control type="panel" id="50">
-			<posx>86</posx>
-			<posy>85</posy>
-			<width>1106</width>
-			<height>538</height>
-			<onleft>2</onleft>
-			<onright>60</onright>
-			<onup>50</onup>
-			<ondown>50</ondown>
-			<viewtype label="535">list</viewtype>
-			<pagecontrol>60</pagecontrol>
-			<scrolltime>200</scrolltime>
-			<itemlayout height="67" width="1110">
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1106</width>
-					<height>67</height>
-					<texture border="4">bara_sus.png</texture>
-					<colordiffuse>95FFFFFF</colordiffuse>
-				</control>
-				<control type="image">
-					<posx>7</posx>
-					<posy>4</posy>
-					<width>60</width>
-					<height>60</height>
-					<texture background="true">$VAR[PosterThumb]</texture>
-				</control>
-				<control type="label">
-					<posx>82</posx>
-					<posy>0</posy>
-					<width>1000</width>
-					<height>52</height>
-					<font>font40_title</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-				<!--<control type="label">
-					<posx>1072</posx>
-					<posy>2</posy>
-					<width>300</width>
-					<height>52</height>
-					<font>font40_title</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>-->
-				<!--<control type="image">
-					<description>Rating value</description>
-					<posx>1380</posx>
-					<posy>30</posy>
-					<width>100</width>
-					<height>25</height>
-					<aspectratio align="left">keep</aspectratio>
-					<texture fallback="light/left_rating/rating0.png">$INFO[ListItem.StarRating,light/left_rating/]</texture>
-					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>-->
-				<!--<control type="label">
-					<posx>1022</posx>
-					<posy>2</posy>
-					<width>300</width>
-					<height>22</height>
-					<font>font12</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>-->
-				<!--<control type="image">
-					<description>Rating value</description>
-					<posx>1320</posx>
-					<posy>30</posy>
-					<width>100</width>
-					<height>25</height>
-					<aspectratio align="left">keep</aspectratio>
-					<texture fallback="light/left_rating/rating0.png">$INFO[ListItem.StarRating,light/left_rating/]</texture>
-					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>-->
-				<control type="image">
-					<posx>1072</posx>
-					<posy>7</posy>
-					<width>45</width>
-					<height>30</height>
-					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
-					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>
-				<control type="image">
-					<posx>1119</posx>
-					<posy>13</posy>
-					<width>19</width>
-					<height>19</height>
-					<aspectratio>keep</aspectratio>
-					<texture>OverlayWatching.png</texture>
-					<visible>ListItem.IsResumable</visible>
-				</control>
-				<control type="image">
-					<posx>1117</posx>
-					<posy>11</posy>
-					<width>22</width>
-					<height>22</height>
-					<texture>$INFO[ListItem.Overlay,light/]</texture>
-					<visible>!ListItem.IsResumable</visible>
-				</control>
-			</itemlayout>
-			<focusedlayout height="52" width="1110">
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1105</width>
-					<height>67</height>
-					<texture border="4">ListFO.png</texture>
-				</control>
-				<control type="image">
-					<posx>7</posx>
-					<posy>4</posy>
-					<width>60</width>
-					<height>60</height>
-					<texture background="true">$VAR[PosterThumb]</texture>
-				</control>
-				<control type="label">
-					<posx>82</posx>
-					<posy>0</posy>
-					<width>922</width>
-					<height>52</height>
-					<font>font40_title</font>
-					<textcolor>black</textcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>left</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-				<!--<control type="label">
-					<posx>1072</posx>
-					<posy>2</posy>
-					<width>300</width>
-					<height>52</height>
-					<font>font40_title</font>
-					<textcolor>black</textcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>-->
-				<!--<control type="image">
-					<description>Rating value</description>
-					<posx>1380</posx>
-					<posy>30</posy>
-					<width>100</width>
-					<height>25</height>
-					<aspectratio align="left">keep</aspectratio>
-					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.StarRating,dark/left_rating/]</texture>
-					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>-->
-				<control type="label">
-					<posx>1072</posx>
-					<posy>2</posy>
-					<width>300</width>
-					<height>22</height>
-					<font>font12</font>
-					<textcolor>black</textcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label2]</label>
-					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>
-				<control type="image">
-					<description>Rating value</description>
-					<posx>990</posx>
-					<posy>22</posy>
-					<width>75</width>
-					<height>19</height>
-					<aspectratio align="left">keep</aspectratio>
-					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.StarRating,dark/left_rating/]</texture>
-					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>
-				<control type="image">
-					<posx>1072</posx>
-					<posy>7</posy>
-					<width>45</width>
-					<height>30</height>
-					<texture>$INFO[ListItem.VideoResolution,dark/,.png]</texture>
-					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>
-				<control type="image">
-					<posx>1072</posx>
-					<posy>13</posy>
-					<width>19</width>
-					<height>19</height>
-					<aspectratio>keep</aspectratio>
-					<texture>OverlayWatching.png</texture>
-					<visible>ListItem.IsResumable</visible>
-				</control>
-				<control type="image">
-					<posx>1072</posx>
-					<posy>11</posy>
-					<width>22</width>
-					<height>22</height>
-					<texture>$INFO[ListItem.Overlay,dark/]</texture>
-					<visible>!ListItem.IsResumable</visible>
-				</control>
 			</focusedlayout>
 		</control>
 	</include>
@@ -745,4 +531,114 @@
 			</focusedlayout>
 		</control>
 	</include>
+
+
+  <include name="CommonRootViewWithBlade">
+		<control type="panel" id="50">
+			<posx>86</posx>
+			<posy>85</posy>
+			<width>1106</width>
+			<height>538</height>
+			<onleft>60</onleft>
+			<onright>60</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<viewtype label="535">list</viewtype>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="67" width="1190">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1190</width>
+					<height>67</height>
+					<texture border="4">bara_sus.png</texture>
+					<colordiffuse>95FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>7</posx>
+					<posy>4</posy>
+					<width>60</width>
+					<height>60</height>
+					<texture background="true">$VAR[PosterThumb]</texture>
+				</control>
+				<control type="label">
+					<posx>82</posx>
+					<posy>0</posy>
+					<width>1000</width>
+					<height>52</height>
+					<font>font40_title</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<!--<control type="label">
+					<posx>1072</posx>
+					<posy>2</posy>
+					<width>300</width>
+					<height>52</height>
+					<font>font40_title</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>-->
+				
+			</itemlayout>
+			<focusedlayout height="67" width="1110">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1106</width>
+					<height>67</height>
+					<texture border="4">ListFO.png</texture>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="image">
+					<posx>7</posx>
+					<posy>4</posy>
+					<width>60</width>
+					<height>60</height>
+					<texture background="true">$VAR[PosterThumb]</texture>
+				</control>
+				<control type="label">
+					<posx>82</posx>
+					<posy>0</posy>
+					<width>922</width>
+					<height>52</height>
+					<font>font40_title</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>1072</posx>
+					<posy>2</posy>
+					<width>300</width>
+					<height>52</height>
+					<font>font40_title</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+				<!--<control type="image">
+					<description>Rating value</description>
+					<posx>1415</posx>
+					<posy>30</posy>
+					<width>100</width>
+					<height>70</height>
+					<aspectratio align="left">keep</aspectratio>
+					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.StarRating,dark/left_rating/]</texture>
+				</control>-->
+			</focusedlayout>
+		</control>
+	</include>
+
 </includes>
