@@ -21,53 +21,10 @@
         
         
         
-        <!--Meniu by me-->
-        <control type="group" id="4200">
-            <include>Window_OpenClose_Animation_Zoom</include>
-            <posx>20</posx>
-            <posy>135</posy>
-            <control type="button" id="4201">
-                <ondown>Control.SetFocus(4211)</ondown>
-                <onup>Control.SetFocus(600)</onup>
-                <onleft>Control.SetFocus()</onleft>
-				<onright>Control.SetFocus(4251)</onright>
-                <description>Video Button</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>540</width>
-                <height>130</height>
-                <texturenofocus>home_1.png</texturenofocus>
-                <texturefocus border="5">home_1_p.png</texturefocus>
-                <onclick>ActivateWindow(Videos)</onclick>
-            </control>
-            
-            <control type="image">
-                <description>Video Button Image</description>
-                <posx>30</posx>
-                <posy>30</posy>
-                <width>80</width>
-                <height>80</height>
-                <texture>video2.png</texture>
-            </control>
-            <control type="label">
-                <description>Video label</description>
-                <posx>172</posx>
-                <posy>22</posy>
-                <height>90</height>
-                <width>200</width>
-                <label>Videos</label>
-                <aligny>center</aligny>
-                <font>font40_title</font>
-                <textcolor>FFFFFFFF</textcolor>
-            </control>
-        </control>
-        
-        <include>Navigation</include>
-        <include>Pictures</include>
-        
-        <include>Radio</include>
-        <include>Favourites</include>
-        
+<!--Jukebox Menu by lithium-->
+
+
+    <!-- Center Image (first to draw under buttons) --> 
         
         <control type="image">
             <description>Normal Default Logo Image</description>
@@ -91,8 +48,135 @@
             <visible>Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath))</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
         </control>
+
+    <!-- Left Side Image --> 
+
+        <!-- Genre -->
+        <control type="group" id="4200">
+            <include>Window_OpenClose_Animation_Zoom</include>
+            <posx>20</posx>
+            <posy>135</posy>
+            <control type="button" id="4201">
+                <ondown>Control.SetFocus(4211)</ondown>
+                <onup>Control.SetFocus(600)</onup>
+                <onleft>Control.SetFocus()</onleft>
+				<onright>Control.SetFocus(4251)</onright>
+                <description>Genre Button</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>540</width>
+                <height>130</height>
+                <texturenofocus>home_1.png</texturenofocus>
+                <texturefocus border="5">home_1_p.png</texturefocus>
+                <onclick>ActivateWindow(Music,Genres)</onclick>
+            </control>
+            
+            <control type="image">
+                <description>Genre Button Image</description>
+                <posx>30</posx>
+                <posy>30</posy>
+                <width>80</width>
+                <height>80</height>
+                <texture>icon_playlistmusic.png</texture>
+            </control>
+            <control type="label">
+                <description>Genres label</description>
+                <posx>120</posx>
+                <posy>22</posy>
+                <height>90</height>
+                <width>250</width>
+                <label>Genres</label>
+                <aligny>center</aligny>
+                <align>left</align>
+                <font>font40_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+            </control>
+        </control>
+       
+        <!-- Artist --> 
+        <control type="group" id="4220">
+            <include>Window_OpenClose_Animation_Zoom</include>
+            <posx>20</posx>
+            <posy>280</posy>
+            <control type="button" id="4221">
+                <description>Artist Button</description>
+                <onup>Control.SetFocus(4201)</onup>
+                <ondown>Control.SetFocus(4221)</ondown>
+                <onright>Control.SetFocus(4261)</onright>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>408</width>
+                <height>130</height>
+                <texturenofocus >home_2.png</texturenofocus>
+                <texturefocus border="5">home_2_p.png</texturefocus>
+                <onclick>ActivateWindow(Music,Artists)</onclick>
+            </control>
+            <control type="image">
+                <description>Artist Button Image</description>
+                <posx>30</posx>
+                <posy>30</posy>
+                <width>80</width>
+                <height>80</height>
+                <texture>icon_playlistmusic.png</texture>
+            </control>
+            <control type="label">
+                <description>Artist label</description>
+                <posx>120</posx>
+                <posy>22</posy>
+                <height>90</height>
+                <width>250</width>
+                <label>Artists</label>
+                <aligny>center</aligny>
+                <align>left</align>
+                <font>font40_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+            </control>
+        </control>
+
+        <!-- Playlist -->
+        <control type="group" id="4240">
+            <include>Window_OpenClose_Animation_Zoom</include>
+            <posx>20</posx>
+            <posy>430</posy>
+            <control type="button" id="4241">
+                <description>Playlists</description>
+                <onup>Control.SetFocus(4211)</onup>
+                <ondown>Control.SetFocus(4251)</ondown>
+                <onright>Control.SetFocus(4271)</onright>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>540</width>
+                <height>130</height>
+                <texturenofocus >home_3.png</texturenofocus>
+                <texturefocus border="5">home_3_p.png</texturefocus>
+                <onclick>ActivateWindow(Music,Playlists)</onclick>
+            </control>
+            <control type="image">
+                <description>Playlists</description>
+                <posx>30</posx>
+                <posy>30</posy>
+                <width>80</width>
+                <height>80</height>
+                <texture>icon_playlistmusic.png</texture>
+            </control>
+            <control type="label">
+                <description>Playlists label</description>
+                <posx>120</posx>
+                <posy>22</posy>
+                <height>90</height>
+                <width>250</width>
+                <label>Playlists</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font40_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+            </control>
+        </control>
+
         
-        
+    <!-- Right Side --> 
+       
+        <!-- Music Library --> 
         <control type="group" id="4250">
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>560r</posx>
@@ -118,22 +202,23 @@
                 <posy>30</posy>
                 <width>80</width>
                 <height>80</height>
-                <texture>music2.png</texture>
+                <texture>icon-music.png</texture>
             </control>
             <control type="label">
                 <description>Music label</description>
-                <posx>170</posx>
+                <posx>400</posx>
                 <posy>22</posy>
                 <height>90</height>
                 <width>250</width>
-                <label>Music</label>
-                <align>center</align>
+                <label>Library</label>
+                <align>right</align>
                 <aligny>center</aligny>
                 <font>font40_title</font>
                 <textcolor>FFFFFFFF</textcolor>
             </control>
         </control>
-        
+       
+        <!-- Programs --> 
         <control type="group" id="4260">
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>428r</posx>
@@ -159,7 +244,7 @@
                 <posy>30</posy>
                 <width>80</width>
                 <height>80</height>
-                <texture>programs2.png</texture>
+                <texture>icon_home.png</texture>
             </control>
             <control type="label">
                 <description>Programs label</description>
@@ -174,7 +259,8 @@
                 <textcolor>FFFFFFFF</textcolor>
             </control>
         </control>
-        
+       
+        <!-- Favorites --> 
         <control type="group" id="4270">
             <include>Window_OpenClose_Animation_Zoom</include>           
             <posx>560r</posx>
@@ -184,7 +270,6 @@
                 <onup>Control.SetFocus(4261)</onup>
                 <ondown>Control.SetFocus(4281)</ondown>
                 <onleft>Control.SetFocus(4241)</onleft>
-				<onright></onright>
                 <description>Shutdown Button</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -193,30 +278,34 @@
                 <font>-</font>
                 <texturenofocus>home_6.png</texturenofocus>
                 <texturefocus border="5">home_6_p.png</texturefocus>
-                <onclick>RunScript("special://skin/scripts/system_poweroff.py")</onclick>
+                <onclick>ActivateWindow(Favourites)</onclick>
             </control>
             <control type="image">
-                <description>Shutdown Button Image</description>
+                <description>Favorites Button Image</description>
                 <posx>140r</posx>
                 <posy>30</posy>
                 <width>80</width>
                 <height>80</height>
-                <texture>shut-down2.png</texture>
+                <texture>icon_favourites_w.png</texture>
             </control>
             <control type="label">
-                <description>Shutdown label</description>
+                <description>Favorites label</description>
                 <posx>170</posx>
                 <posy>22</posy>
                 <height>90</height>
                 <width>250</width>
-                <label>Shutdown</label>
+                <label>Favorites</label>
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>font40_title</font>
                 <textcolor>FFFFFFFF</textcolor>			
             </control>
         </control>
-        
+       
+
+
+
+
         <include>CommonBottomBar</include>
         
         <!-- Song/radio info -->
@@ -228,7 +317,10 @@
         
         <include>HomeRecentlyAddedInfo</include>
         <include>BottomNowPLaying</include>
-        
+      
+
+
+       <!-- Settings Icon --> 
        <control type="group" id="4280">
            <include>Window_OpenClose_Animation_Slide_Up</include>
             <posx>95r</posx>
@@ -257,37 +349,49 @@
                 <bordersize>12</bordersize>
             </control>
         </control>
-        
-        <control type="group" id="4290">
+
+        <!-- Files Icon -->        
+        <control type="group" id="4297">
+            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFileManager)</visible>
             <include>Window_OpenClose_Animation_Slide_Up</include>
             <posx>190r</posx>
             <posy>85r</posy>
-            <control type="button" id="4291">
-                <ondown>Control.SetFocus(4296)</ondown>
-                <onup>Control.SetFocus(4281)</onup>
-                <onleft>Control.SetFocus(4296)</onleft>
-				<onright>Control.SetFocus(4281)</onright>
-                <description>Settings Button</description>
+            <control type="button" id="4298">
+                <ondown>Control.SetFocus(605)</ondown>
+                <onup>Control.SetFocus(4296)</onup>
+                <onleft>Control.SetFocus(605)</onleft>
+                <onright>Control.SetFocus(4296)</onright>
+                <description>Files button</description>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>82</width>
                 <height>82</height>
                 <texturenofocus  border="4">floor_button_t.png</texturenofocus>
                 <texturefocus border="4">floor_buttonfo.png</texturefocus>
-                <onclick>ActivateWindow(Favourites)</onclick>
-            </control>   
+                <onclick>ActivateWindow(3)</onclick>
+            </control>
+            <!-- <control type="label">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>80</width>
+                <height>80</height>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>Files</label>
+                <textcolor>white</textcolor>
+                <font>font24</font>
+            </control> -->
             <control type="image">
-                <description>Favourites Button Image</description>
+                <description>Files Button Image</description>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>82</width>
                 <height>82</height>
-                <texture>icon_favourites_w.png</texture>
+                <texture>icon_city_w.png</texture>
                 <bordersize>12</bordersize>
             </control>
         </control>
-        <include>FileManager</include>
-        <include>Connect3g</include>
+ 
         <include>BehindDialogFadeOut</include>
     </controls>	
 </window>
