@@ -525,10 +525,10 @@
         <control type="group">
             <posx>10</posx>
             <posy>0</posy>
-            <visible>!Window.IsActive(1115)</visible>
+            <visible>!Window.IsActive(1115) + !Window.IsVisible(Visualisation) + !Window.IsVisible(Fullscreenvideo)</visible>
             
             <control type="image">
-                <description>Back</description>
+                <description>musicosd</description>
                 <posx>15</posx>
                 <posy>25</posy>
                 <width>50</width>
@@ -544,10 +544,11 @@
                 <onclick>ActivateWindow(1115)</onclick>
             </control>
         </control>
+        
         <control type="group">
             <posx>10</posx>
             <posy>0</posy>
-            <visible>Window.IsActive(1115)</visible>
+            <visible>Window.IsActive(1115) | Window.IsVisible(Visualisation) | Window.IsVisible(Fullscreenvideo)</visible>
             <control type="image">
                 <description>Back</description>
                 <posx>15</posx>
@@ -557,6 +558,7 @@
                 <texture>arrow-big-down.png</texture>
             </control>
             <control type="button">
+                <visible>!Window.IsVisible(Visualisation) + !Window.IsVisible(Fullscreenvideo)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>80</width>
@@ -564,6 +566,19 @@
                 <colordiffuse>00FFFFFF</colordiffuse>
                 <onclick>ParentDir</onclick>
             </control>
+            <control type="button">
+                <visible>Window.IsVisible(Visualisation) | Window.IsVisible(Fullscreenvideo)</visible>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>80</width>
+                <height>80</height>
+                <colordiffuse>00FFFFFF</colordiffuse>
+                <onclick>Dialog.Close(VideoOSD,true)</onclick>
+                <onclick>Dialog.Close(MusicOSD,true)</onclick>
+                <onclick>ParentDir</onclick>
+                <onclick>ParentDir</onclick>
+            </control>
+
         </control>
 
 
@@ -991,6 +1006,8 @@
                 <font>-</font>
                 <texturenofocus border="5">floor_button_t.png</texturenofocus>
                 <texturefocus border="5">floor_buttonFO.png</texturefocus>
+                <onclick>Dialog.Close(VideoOSD,true)</onclick>
+                <onclick>Dialog.Close(MusicOSD,true)</onclick>
                 <onclick>ActivateWindow(Home)</onclick>
             </control>
             <control type="image">
