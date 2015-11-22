@@ -823,7 +823,7 @@
 		<!-- repeat, shuffle -->
 		<control type="group">
 			<posx>412r</posx>
-			<posy>94r</posy> 
+			<posy>89r</posy> 
 			<include>Window_OpenClose_Animation_Slide_Up</include>
 			<control type="button" id="606">
 				<posx>0</posx>
