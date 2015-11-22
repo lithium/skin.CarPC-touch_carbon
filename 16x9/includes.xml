@@ -532,9 +532,22 @@
                 <posx>7</posx>
                 <posy>45</posy>
                 <height>37</height>
+                <width>337</width>
+                <info>MusicPlayer.Title</info>
+                <font>font13_title</font>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+        <!--
+            <control type="label">
+                <description>label</description>
+                <posx>7</posx>
+                <posy>45</posy>
+                <height>37</height>
                 <width>150</width>
                 <label>13376</label>
-                <font>font24_title</font>
+                <font>font13_title</font>
                 <aligny>center</aligny>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
@@ -546,12 +559,13 @@
                 <height>37</height>
                 <width>150</width>
                 <label>$INFO[Control.GetLabel(1)]</label>
-                <font>font24_title</font>
+                <font>font13_title</font>
                 <align>right</align>
                 <aligny>center</aligny>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
             </control>
+        -->
             <control type="progress" id="2">
                 <description>Volume</description>
                 <posx>0</posx>
