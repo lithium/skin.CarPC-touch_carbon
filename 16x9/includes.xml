@@ -523,8 +523,32 @@
     
     <include name="CommonVolumeBottom">
         <control type="group">
+            <posx>10</posx>
+            <posy>0</posy>
+            <visible>!Window.IsActive(1115)</visible>
+            
+            <control type="image">
+                <description>Back</description>
+                <posx>15</posx>
+                <posy>25</posy>
+                <width>50</width>
+                <height>50</height>
+                <texture>arrow-big-up.png</texture>
+            </control>
+            <control type="button">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>80</width>
+                <height>80</height>
+                <colordiffuse>00FFFFFF</colordiffuse>
+                <onclick>ActivateWindow(1115)</onclick>
+            </control>
+        </control>
+
+
+        <control type="group">
             <!--<visible>Player.HasMedia</visible>-->
-            <posx>15</posx>
+            <posx>95</posx>
             <posy>15</posy>
             <control type="label">
                 <description>label</description>
@@ -1012,13 +1036,12 @@
             <include>Window_OpenClose_Animation_Slide_Up</include>
             <include>SubMenuCommonLayout</include>
             <content>
+            <!--
                 <item>
                     <label>1036</label>
                     <onclick>ActivateWindow(1115)</onclick>
                     <icon>arrow-big-up.png</icon>
                 </item>
-
-            <!--
                 <item>
                     <label>587</label>
                     <onclick condition="!Container.CanFilterAdvanced">SendClick(19)</onclick>
