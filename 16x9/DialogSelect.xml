@@ -12,21 +12,21 @@
 			<description>Shadow Background for dialogs without BehindDialogFadeOut include</description>
 			<posx>-22</posx>
 			<posy>-22</posy>
-			<width>577</width>
+			<width>545</width>
 			<height>645</height>
 			<texture border="22">DialogShadow.png</texture>
 		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>532</width>
+			<width>500</width>
 			<height>45</height>
 			<texture border="4">DialogHeader.png</texture>
 		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>45</posy>
-			<width>532</width>
+			<width>500</width>
 			<height>570</height>
 			<texture border="4">DialogBack.png</texture>
 		</control>
@@ -39,7 +39,7 @@
 			<label>$LOCALIZE[13406]</label>
 		</control>
 		<control type="group">
-			<posx>480</posx>
+			<posx>450</posx>
 			<posy>0</posy>
 			<include>DialogCloseButtonCommons</include>
 		</control>
@@ -47,7 +47,7 @@
 			<animation effect="slide" start="0,0" end="10,0" time="0" condition="!Control.IsVisible(60)">Conditional</animation>
 			<posx>0</posx>
 			<posy>45</posy>
-			<width>360</width>
+			<width>440</width>
 			<height>487</height>
 			<onup>3</onup>
 			<ondown>3</ondown>
@@ -99,9 +99,9 @@
 			</focusedlayout>
 		</control>
 		<control type="scrollbar" id="45">
-			<posx>510</posx>
+			<posx>460</posx>
 			<posy>45</posy>
-			<width>22</width>
+			<width>30</width>
 			<height>487</height>
 			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
@@ -214,7 +214,7 @@
 		<control type="scrollbar" id="61">
 			<posx>510</posx>
 			<posy>45</posy>
-			<width>22</width>
+			<width>30</width>
 			<height>487</height>
 			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
@@ -233,7 +233,7 @@
 		</control>
 		<control type="label">
 			<description>number of files/pages in list text label</description>
-			<posx>510</posx>
+			<posx>470</posx>
 			<posy>562</posy>
 			<width>225</width>
 			<height>22</height>
@@ -247,7 +247,7 @@
 		</control>
 		<control type="label">
 			<description>number of files/pages in list text label</description>
-			<posx>510</posx>
+			<posx>470</posx>
 			<posy>562</posy>
 			<width>225</width>
 			<height>22</height>
