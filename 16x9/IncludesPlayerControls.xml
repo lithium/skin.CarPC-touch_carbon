@@ -38,20 +38,13 @@
 					<bordersize>2</bordersize>
 				</control>
 				
-				<control type="image">
-					<description>cover image</description>
-					<posx>450</posx>
-					<posy>0</posy>
-					<width>900</width>
-					<height>50</height>
-					<texture>ceas.png</texture>
-				</control>
 
-					
-   				<control type="label">
+		
+				<!-- Artist -->					
+ 				<control type="label">
 					<description>Artist label</description>
 					<posx>625</posx>
-					<posy>100</posy>
+					<posy>10</posy>
 					<width>620</width>
 					<height>50</height>
 					<align>left</align>
@@ -62,7 +55,7 @@
 				<control type="image">
 					<description>artist label background</description>
 					<posx>450</posx>
-					<posy>135</posy>
+					<posy>45</posy>
 					<width>900</width>
 					<height>90</height>
 					<texture>ceas.png</texture>
@@ -70,7 +63,7 @@
 				<control type="label">
 					<description>Artist label</description>
 					<posx>625</posx>
-					<posy>140</posy>
+					<posy>45</posy>
 					<width>620</width>
 					<height>25</height>
 					<align>left</align>
@@ -78,7 +71,8 @@
 					<label>$INFO[MusicPlayer.Artist]</label>
 					<textcolor>white</textcolor>
 				</control>
-				
+			
+				<!-- Title -->	
 				<control type="label">
 					<description>Title label</description>
 					<posx>625</posx>
@@ -90,31 +84,37 @@
 					<label>Title</label>
 					<textcolor>blue</textcolor>
 				</control>		
+
+			<!--	
 				<control type="image">
 					<description>title label background</description>
 					<posx>450</posx>
-					<posy>265</posy>
+					<posy>230</posy>
 					<width>900</width>
-					<height>70</height>
+					<height>60</height>
 					<texture>ceas.png</texture>
 				</control>
+			-->
+			
 				<control type="label">
 					<posx>625</posx>
-					<posy>290</posy>
+					<posy>275</posy>
 					<width>620</width>
-					<height>22</height>
+					<height>175</height>
 					<font>font40_title</font>
 					<align>left</align>
-					<aligny>center</aligny>
+					<aligny>top</aligny>
 					<label>$INFO[MusicPlayer.Title]</label>
 					<textcolor>white</textcolor>
-					<scroll>true</scroll>
+					<scroll>false</scroll>
+          <wrapmultiline>true</wrapmultiline>
 				</control>
-				
+			
+				<!-- Album -->	
 				<control type="label">
 					<description>Album label</description>
 					<posx>625</posx>
-					<posy>365</posy>
+					<posy>130</posy>
 					<width>620</width>
 					<height>50</height>
 					<align>left</align>
@@ -125,7 +125,7 @@
 				<control type="image">
 					<description>album label background</description>
 					<posx>450</posx>
-					<posy>405</posy>
+					<posy>165</posy>
 					<width>900</width>
 					<height>60</height>
 					<texture>ceas.png</texture>
@@ -133,7 +133,7 @@
 				<control type="label">
 					<description>Album label</description>
 					<posx>625</posx>
-					<posy>410</posy>
+					<posy>170</posy>
 					<width>620</width>
 					<height>25</height>
 					<align>left</align>
@@ -141,7 +141,9 @@
 					<label>$INFO[MusicPlayer.Album]</label>
 					<textcolor>white</textcolor>
 				</control>
-				
+
+				<!-- Codec, Rating -->
+			<!--	
 				<control type="group">
 					<posx>625</posx>
 					<posy>460</posy>
@@ -182,6 +184,10 @@
 						</control>
 					</control>
 				</control>
+      -->
+
+
+      	<!-- Party Mode / Track Number -->
 				<control type="label">
 					<description>Normal Header label</description>
 					<posx>15r</posx>
@@ -195,10 +201,11 @@
 					<label>$LOCALIZE[589]</label>
 					<visible>MusicPartyMode.Enabled</visible>
 				</control>
+
 				<control type="label">
 					<description>Partymode Header label</description>
 					<posx>1050</posx>
-					<posy>480</posy>
+					<posy>0</posy>
 					<width>300</width>
 					<height>19</height>
 					<align>left</align>
@@ -208,21 +215,35 @@
 					<label>$INFO[musicplayer.Playlistposition,$LOCALIZE[554]: ]$INFO[musicplayer.Playlistlength, / ]</label>
 					<visible>!MusicPartyMode.Enabled</visible>
 				</control>
+
+				<!-- next track -->
 				<control type="label">
 					<posx>625</posx>
-					<posy>15</posy>
-					<width>630</width>
+					<posy>475</posy>
+					<width>600</width>
 					<height>19</height>
 					<label>$LOCALIZE[209]: $INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font24_title</font>
 					<textcolor>white</textcolor>
-					<scroll>true</scroll>
+					<scroll>false</scroll>
 					<visible>MusicPlayer.HasNext</visible>
 				</control>
+				<control type="image">
+					<description>cover image</description>
+					<posx>450</posx>
+					<posy>460</posy>
+					<width>900</width>
+					<height>50</height>
+					<texture>ceas.png</texture>
+					<visible>MusicPlayer.HasNext</visible>
+				</control>
+
 			</control>
 		</control>
+
+
 		<!--Video Header-->
 		<control type="group">
 			<posx>0</posx>
@@ -743,6 +764,7 @@
 			</control>
 		</control>-->
 
+		<!-- scrubber -->
 		<control type="group">
 			<posx>0</posx>
 			<posy>110r</posy>
@@ -805,6 +827,8 @@
 				<textureslidernibfocus>OSDSliderNib.png</textureslidernibfocus>
 			</control>
 		</control>
+
+		<!-- repeat, shuffle -->
 		<control type="group">
 			<posx>412r</posx>
 			<posy>94r</posy> 
