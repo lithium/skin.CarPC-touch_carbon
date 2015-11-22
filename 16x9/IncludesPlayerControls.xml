@@ -26,6 +26,8 @@
 				<texture border="4"></texture>
 			</control>
 			<control type="group">
+
+				<!-- Cover --> 
 				<control type="image">
 					<description>cover image</description>
 					<posx>20</posx>
@@ -38,8 +40,6 @@
 					<bordersize>2</bordersize>
 				</control>
 				
-
-		
 				<!-- Artist -->					
  				<control type="label">
 					<description>Artist label</description>
@@ -84,7 +84,6 @@
 					<label>Title</label>
 					<textcolor>blue</textcolor>
 				</control>		
-
 			<!--	
 				<control type="image">
 					<description>title label background</description>
@@ -95,7 +94,6 @@
 					<texture>ceas.png</texture>
 				</control>
 			-->
-			
 				<control type="label">
 					<posx>625</posx>
 					<posy>275</posy>
@@ -142,73 +140,67 @@
 					<textcolor>white</textcolor>
 				</control>
 
-				<!-- Codec, Rating -->
-			<!--	
-				<control type="group">
-					<posx>625</posx>
-					<posy>460</posy>
-					<width>600</width>
+				<!-- Codec -->
+				<control type="image">
+					<description>Audio Codec Image</description>
+					<posx>105r</posx>
+					<posy>0</posy>
+					<width>75</width>
 					<height>60</height>
+					<aspectratio align="left">keep</aspectratio>
+					<texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+				</control>
+
+				<!-- Rating -->
+				<control type="group">
+					<description>Rating</description>
+					<posx>240r</posx>
+					<posy>11</posy>
+					<width>120</width>
+					<height>37</height>
 					<control type="image">
-						<description>Audio Codec Image</description>
+						<description>rating back</description>
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>75</width>
-						<height>60</height>
-						<aspectratio align="left">keep</aspectratio>
-						<texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
-					</control>
-					<control type="group">
-						<description>Rating</description>
-						<posx>94</posx>
-						<posy>11</posy>
 						<width>120</width>
 						<height>37</height>
-						<control type="image">
-							<description>rating back</description>
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>120</width>
-							<height>37</height>
-							<aspectratio align="left">stretch</aspectratio>
-							<texture border="4">flagging/blank.png</texture>
-						</control>
-						<control type="image">
-							<description>Rating</description>
-							<posx>7</posx>
-							<posy>0</posy>
-							<width>105</width>
-							<height>37</height>
-							<aspectratio align="center">keep</aspectratio>
-							<texture fallback="LeftRating/rating0.png">$INFO[Player.StarRating,light/left_rating/]</texture>
-						</control>
+						<aspectratio align="left">stretch</aspectratio>
+						<texture border="4">flagging/blank.png</texture>
+					</control>
+					<control type="image">
+						<description>Rating</description>
+						<posx>7</posx>
+						<posy>0</posy>
+						<width>105</width>
+						<height>37</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture fallback="LeftRating/rating0.png">$INFO[Player.StarRating,light/left_rating/]</texture>
 					</control>
 				</control>
-      -->
 
-
-      	<!-- Party Mode / Track Number -->
+      	<!-- Party Mode -->
 				<control type="label">
 					<description>Normal Header label</description>
-					<posx>15r</posx>
-					<posy>4</posy>
-					<width>225</width>
+					<posx>30r</posx>
+					<posy>440</posy>
+					<width>300</width>
 					<height>19</height>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>font13</font>
-					<textcolor>white</textcolor>
+					<font>font24_title</font>
+					<textcolor>blue</textcolor>
 					<label>$LOCALIZE[589]</label>
 					<visible>MusicPartyMode.Enabled</visible>
 				</control>
 
+ 				<!-- Track Number -->
 				<control type="label">
 					<description>Partymode Header label</description>
-					<posx>1050</posx>
-					<posy>0</posy>
+					<posx>30r</posx>
+					<posy>440</posy>
 					<width>300</width>
 					<height>19</height>
-					<align>left</align>
+					<align>right</align>
 					<aligny>center</aligny>
 					<font>font24_title</font>
 					<textcolor>blue</textcolor>
@@ -216,7 +208,7 @@
 					<visible>!MusicPartyMode.Enabled</visible>
 				</control>
 
-				<!-- next track -->
+				<!-- Next -->
 				<control type="label">
 					<posx>625</posx>
 					<posy>475</posy>
