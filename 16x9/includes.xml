@@ -57,12 +57,11 @@
             <posx>80r</posx>
             <posy>0</posy>
             <include>Window_OpenClose_Animation_Slide_Down</include>
-            <visible>Window.IsVisible(Home)</visible>
             <include>VisibleFadeEffect</include>
             
             <control type="image">
                 <description>Current Playlist</description>
-                <posx>10</posx>
+                <posx>15</posx>
                 <posy>15</posy>
                 <width>50</width>
                 <height>50</height>
@@ -818,6 +817,7 @@
             <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <!--<include>Window_OpenClose_Animation</include>-->
             <include>Window_OpenClose_Animation_Slide_Down</include>
+        <!--
             <control type="image">
                 <posx>150r</posx>
                 <posy>0</posy>
@@ -826,9 +826,10 @@
                 <aspectratio>keep</aspectratio>
                 <texture>filecount.png</texture>
             </control>
+        -->
             <control type="label">
                 <description>Page Count Label 1</description>
-                <posx>157r</posx>
+                <posx>170r</posx>
                 <posy>9</posy>
                 <width>375</width>
                 <height>15</height>
@@ -842,7 +843,7 @@
             </control>
             <control type="label">
                 <description>Page Count Label 2</description>
-                <posx>157r</posx>
+                <posx>170r</posx>
                 <posy>31</posy>
                 <width>375</width>
                 <height>15</height>
@@ -960,16 +961,16 @@
     <include name="OptionsButtonCommons">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Down</include>
-            <posx>75r</posx>
-            <posy>1</posy>
+            <posx>160r</posx>
+            <posy>0</posy>
             <visible>!Window.IsActive(PlayerControls)</visible>
             <include>VisibleFadeEffect</include>
             <control type="button">
                 <description>Options Button</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>75</width>
-                <height>75</height>
+                <width>76</width>
+                <height>76</height>
                 <font>-</font>
                 <texturenofocus border="5">floor_button.png</texturenofocus>
                 <texturefocus border="5">floor_buttonFO.png</texturefocus>
@@ -977,10 +978,10 @@
             </control>
             <control type="image">
                 <description>Options Button Image</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>75</width>
-                <height>75</height>
+                <posx>14</posx>
+                <posy>14</posy>
+                <width>50</width>
+                <height>50</height>
                 <texture>icon_system.png</texture>
             </control>
         </control>

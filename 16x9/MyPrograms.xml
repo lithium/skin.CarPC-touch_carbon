@@ -12,6 +12,7 @@
 		<include>FileCountCommons</include>
 		<include>HomeButtonCommons</include>
 		<include>OptionsButtonCommons</include>
+		<include>CurrentPlaylist</include>
 
         <include>BottomNowPLaying</include>
         
@@ -41,8 +42,8 @@
 				<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
 			</control>
 			<control type="group">
-				<posx>340r</posx>
-				<posy>130</posy>
+				<posx>410r</posx>
+				<posy>90</posy>
 				<control type="image">
 					<description>Shadow Background</description>
 					<posx>-30</posx>
