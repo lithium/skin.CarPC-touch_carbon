@@ -33,8 +33,10 @@
 			<content>	
 				<item>
 					<label>1036</label>
-					<onclick>ActivateWindow(Favourites)</onclick>
-					<icon>icon_favourites_w.png</icon>
+					<onclick>PlayerControl(Stop)</onclick>
+					<onclick>Playlist.Clear()</onclick>
+					<onclick>ActivateWindow(Home)</onclick>
+					<icon>icon_backspace.png</icon>
 				</item>
 				<item>
 					<label>31200</label>
