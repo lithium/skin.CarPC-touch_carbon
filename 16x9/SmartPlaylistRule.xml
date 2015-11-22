@@ -6,7 +6,7 @@
 	<include>CommonTopBar</include>	
 	<coordinates>
 		<system>1</system>
-		<posx>140</posx>
+		<posx>-50</posx>
 		<posy>260</posy>
 	</coordinates>
 	<controls>
