@@ -608,7 +608,7 @@
 				<texturenofocus border="5">floor_button_t.png</texturenofocus>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<onclick>Skin.ToggleSetting(PlayerControlsShowAudioInfo)</onclick>
-				<visible>Player.HasAudio</visible>
+				<visible>Player.HasAudio + !Skin.HasSetting(HideOSDButtonMediaInfo)</visible>
 			</control>
 			<control type="radiobutton">
 				<description>Show Info Button</description>

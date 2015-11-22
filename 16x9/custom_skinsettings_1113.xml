@@ -314,6 +314,21 @@
 				<selected>!Skin.HasSetting(HideHomeButtonPrograms)</selected>
 			</control>
 
+			<control type="radiobutton" id="204">
+				<description>fourth item</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font24_title</font>
+				<focusedcolor>blue</focusedcolor>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>Show Media Info Button</label>
+				<onclick>Skin.ToggleSetting(HideOSDButtonMediaInfo)</onclick>
+				<selected>!Skin.HasSetting(HideOSDButtonMediaInfo)</selected>
+			</control>
+
+
 		<!--
 			<control type="radiobutton" id="204">
 				<description>Button 3 Show Favourites</description>
@@ -386,13 +401,14 @@
 			<posy>140</posy>
 			<width>920</width>
 			<height>670</height>
-			<itemgap>-1</itemgap>
+			<itemgap>10</itemgap>
 			<pagecontrol>30</pagecontrol>
 			<onup>9</onup>
 			<ondown>9001</ondown>
 			<onleft>2</onleft>
 			<onright>30</onright>
 			<visible>Skin.String(SkinSettings,3)</visible>
+			<!--
 			<control type="label" id="301">
 				<height>50</height>
 				<width>920</width>
@@ -403,7 +419,7 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="button" id="302">
-				<description>Skin Update</description>
+				<description>Update Skin</description>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<height>55</height>
 				<width>920</width>
@@ -417,6 +433,40 @@
 				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 				<onclick>RunScript("special://skin/scripts/install_skin.py")</onclick>
 			</control>
+		-->
+			<control type="button" id="303">
+				<description>Reload Skin</description>
+				<include>ButtonInfoDialogsCommonValues</include>
+				<height>55</height>
+				<width>920</width>
+				<label>Reload Skin</label>
+				<font>font24_title</font>
+				<focusedcolor>white</focusedcolor>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<onclick>ReloadSkin()</onclick>
+			</control>
+
+			<control type="radiobutton" id="304">
+				<description>Debugging</description>
+				<height>55</height>
+				<width>920</width>
+				<label>Skin Debugging</label>
+				<font>font24_title</font>
+				<focusedcolor>white</focusedcolor>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
+				<selected>Skin.HasSetting(DebugInfo)</selected>
+			</control>
+
+
 		</control>
 		
 		
