@@ -53,7 +53,7 @@
 			<ondown>3</ondown>
 			<onleft>5</onleft>
 			<onright>61</onright>
-			<pagecontrol>60</pagecontrol>
+			<pagecontrol>45</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout height="45" width="510">
 				<control type="image">
