@@ -73,7 +73,7 @@
                 <width>80</width>
                 <height>80</height>
                 <colordiffuse>00FFFFFF</colordiffuse>
-                <onclick>ActivateWindow(500)</onclick>
+                <onclick>ActivateWindow(MusicPlaylist)</onclick>
             </control>
         </control>
     </include>
@@ -1039,11 +1039,6 @@
                     <icon>icon_view_w.png</icon>
                 </item>
             -->
-                <item>
-                    <label>31202</label>
-                    <onclick>ActivateWindow(MusicPlaylist)</onclick>
-                    <icon>icon_view_w.png</icon>
-                </item>
                 
                 <item>
                     <label>31200</label>
