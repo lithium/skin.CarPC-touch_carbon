@@ -42,12 +42,14 @@
                 <texture>kodi-logo.png</texture>
             </control>
             <control type="button">
+                <visible>MusicPlayer.Offset(0).Exists</visible>
                 <posx>1</posx>
                 <posy>1</posy>
                 <width>80</width>
                 <height>80</height>
                 <colordiffuse>00FFFFFF</colordiffuse>
-                <onclick>ActivateWindow(1115)</onclick>
+                <!-- <onclick>ActivateWindow(1115)</onclick> -->
+                <onclick>fullscreen</onclick>
             </control>
         </control>
     </include>
@@ -58,6 +60,8 @@
             <posy>0</posy>
             <include>Window_OpenClose_Animation_Slide_Down</include>
             <include>VisibleFadeEffect</include>
+
+            <visible>MusicPlayer.Offset(0).Exists</visible>
             
             <control type="image">
                 <description>Current Playlist</description>
