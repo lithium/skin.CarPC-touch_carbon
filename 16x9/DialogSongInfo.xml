@@ -5,8 +5,8 @@
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<coordinates>
 		<system>1</system>
-		<posx>140</posx>
-		<posy>190</posy>
+		<posx>-50</posx>
+		<posy>110</posy>
 	</coordinates>
 	<controls>
 		<control type="group">
