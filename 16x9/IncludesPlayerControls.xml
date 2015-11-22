@@ -541,12 +541,13 @@
 		</control>
 	
 		<include>CommonTopBar</include>
+		<include>CurrentPlaylist</include>
 
 		<!-- Media Info, Fullscreen -->		
 		<control type="grouplist">
 			<description>Top Right bar</description>
 			<include>Window_OpenClose_Animation_Slide_Down</include>
-			<posx>810r</posx>
+			<posx>820r</posx>
 			<posy>15</posy>
 			<width>750</width>
 			<height>64</height>
