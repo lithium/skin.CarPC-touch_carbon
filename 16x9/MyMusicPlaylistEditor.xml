@@ -35,7 +35,7 @@
 			<control type="label">
 				<description>number of files/pages in left list text label</description>
 				<posx>0</posx>
-				<posy>532</posy>
+				<posy>525</posy>
 				<width>442</width>
 				<font>font12</font>
 				<align>left</align>
@@ -177,7 +177,7 @@
 			<control type="label">
 				<description>Page Count Label</description>
 				<posx>442</posx>
-				<posy>532</posy>
+				<posy>525</posy>
 				<width>442</width>
 				<font>font12</font>
 				<align>right</align>
@@ -331,8 +331,8 @@
 				<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
 			</control>
 			<control type="group">
-				<posx>225r</posx>
-				<posy>97</posy>
+				<posx>340r</posx>
+				<posy>90</posy>
 				<control type="image">
 					<description>Shadow Background</description>
 					<posx>-22</posx>
