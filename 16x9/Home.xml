@@ -398,6 +398,26 @@
                 <visible>Player.HasAudio</visible>
             </control>
 
+            <!-- Paused overlay -->
+            <control type="image">
+                <visible>Player.Paused</visible>
+                <description>pause overlay</description>
+                <left>135</left>
+                <top>135</top>
+                <width>280</width>
+                <height>280</height>
+                <texture>pause_p.png</texture>
+            </control>
+            <control type="button">
+                <visible>MusicPlayer.Offset(0).Exists</visible>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>550</width>
+                <height>550</height>
+                <onclick>PlayerControl(Play)</onclick>
+                <colordiffuse>00FFFFFF</colordiffuse>
+            </control>
+
 
         </control>
 
