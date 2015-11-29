@@ -5,66 +5,77 @@
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<coordinates>
 		<system>1</system>
-		<posx>140</posx>
+		<posx>-80</posx>
 		<posy>30</posy>
 	</coordinates>
 	<controls>
+
+		<!-- Dialog frame -->
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>1000</width>
-			<height>60</height>
+			<width>1040</width>
+			<height>45</height>
 			<texture border="5">DialogHeader.png</texture>
 		</control>
+
+		<!-- dialog title -->
 		<control type="label">
 			<description>header label</description>
+			<visible>container.content(Albums)</visible>
+			<include>WindowTitleCommons</include>
 			<posx>20</posx>
 			<posy>0</posy>
-			<include>WindowTitleCommons</include>
 			<width>910</width>
 			<label>$INFO[Listitem.Album]</label>
-			<visible>container.content(Albums)</visible>
 		</control>
 		<control type="label">
 			<description>header label</description>
+			<visible>container.content(Artists)</visible>
+			<include>WindowTitleCommons</include>
 			<posx>20</posx>
 			<posy>0</posy>
-			<include>WindowTitleCommons</include>
 			<width>910</width>
 			<label>$INFO[Listitem.Artist]</label>
-			<visible>container.content(Artists)</visible>
-		</control>
-		<control type="group">
-			<posx>930</posx>
-			<posy>0</posy>
-			<include>DialogCloseButtonCommons</include>
 		</control>
 
+		<!-- dialog X -->
+		<control type="group">
+			<include>DialogCloseButtonCommons</include>
+			<posx>995</posx>
+			<posy>0</posy>
+		</control>
+
+		<!-- white dialog background -->
 		<control type="image">
 			<posx>0</posx>
-			<posy>60</posy>
-			<width>1000</width>
-			<height>840</height>
+			<posy>45</posy>
+			<width>1040</width>
+			<height>620</height>
 			<texture border="5">DialogBack.png</texture>
 		</control>
+
+		<!-- translucent fanart background overlay -->
 		<control type="image">
 			<posx>0</posx>
-			<posy>60</posy>
-			<width>1000</width>
-			<height>840</height>
+			<posy>45</posy>
+			<width>1040</width>
+			<height>620</height>
 			<aspectratio>scale</aspectratio>
 			<texture>$INFO[ListItem.Art(fanart)]</texture>
-			<colordiffuse>22FFFFFF</colordiffuse>
+			<colordiffuse>30FFFFFF</colordiffuse>
 		</control>
 
+		<!-- Album Info -->
 		<control type="group">
 			<visible>Container.Content(Albums) + !Control.IsVisible(50)</visible>
 			<posy>70</posy>
 			<posx>20</posx>
 			<include>VisibleFadeEffect</include>
+			<!-- cover -->
 			<control type="image">
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>-20</posy>
 				<width>260</width>
 				<height>360</height>
 				<aspectratio>keep</aspectratio>
@@ -72,6 +83,7 @@
 				<bordersize>8</bordersize>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 			</control>
+			<!-- description label -->
 			<control type="label">
 				<posx>280</posx>
 				<posy>0</posy>
@@ -83,27 +95,32 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[21821]$INFO[Container(601).CurrentPage, ( $LOCALIZE[31024] ]$INFO[Container(601).NumPages,/, )]</label>
 			</control>
+			<!-- description text -->
 			<control type="textbox" id="601">
 				<description>Description Value for Albums</description>
 				<posx>280</posx>
 				<posy>30</posy>
-				<width>680</width>
-				<height>330</height>
+				<width>590</width>
+				<height>264</height>
 				<font>font13</font>
 				<textcolor>black</textcolor>
 				<pagecontrol>-</pagecontrol>
 				<label>$INFO[ListItem.Property(Album_Description)]</label>
 			</control>
+
+			<!-- separator -->
 			<control type="image">
 				<posx>0</posx>
-				<posy>390</posy>
+				<posy>300</posy>
 				<width>960</width>
 				<height>5</height>
 				<texture>separator.png</texture>
 			</control>
+
+			<!-- info list -->
 			<control type="list" id="49">
 				<posx>0</posx>
-				<posy>400</posy>
+				<posy>310</posy>
 				<width>960</width>
 				<height>330</height>
 				<onleft>49</onleft>
@@ -114,9 +131,9 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="30">
 					<control type="label">
-						<posx>200</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>100</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
@@ -126,7 +143,7 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>210</posx>
+						<posx>110</posx>
 						<posy>0</posy>
 						<width>750</width>
 						<height>30</height>
@@ -140,9 +157,9 @@
 				</itemlayout>
 				<focusedlayout height="30">
 					<control type="label">
-						<posx>200</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>160</width>
+						<width>100</width>
 						<height>30</height>
 						<font>font13_title</font>
 						<align>right</align>
@@ -152,7 +169,7 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>210</posx>
+						<posx>110</posx>
 						<posy>0</posy>
 						<width>750</width>
 						<height>30</height>
@@ -223,6 +240,7 @@
 			</control>
 		</control>
 
+		<!-- Artist Info -->
 		<control type="group">
 			<visible>Container.Content(Artists) + !Control.IsVisible(50)</visible>
 			<posy>70</posy>
@@ -522,9 +540,10 @@
 			<visible>Control.IsVisible(50)</visible>
 		</control>
 
+		<!-- dialog buttons -->
 		<control type="grouplist" id="9000">
 			<posx>20</posx>
-			<posy>830</posy>
+			<posy>600</posy>
 			<width>960</width>
 			<height>50</height>
 			<itemgap>10</itemgap>

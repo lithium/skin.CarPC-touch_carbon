@@ -410,10 +410,10 @@
             </control>
             <control type="button">
                 <visible>MusicPlayer.Offset(0).Exists</visible>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>550</width>
-                <height>550</height>
+                <posx>135</posx>
+                <posy>135</posy>
+                <width>280</width>
+                <height>280</height>
                 <onclick>PlayerControl(Play)</onclick>
                 <colordiffuse>00FFFFFF</colordiffuse>
             </control>
