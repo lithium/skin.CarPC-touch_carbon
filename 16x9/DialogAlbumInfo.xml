@@ -496,9 +496,9 @@
 
 		<control type="panel" id="50">
 			<posx>0</posx>
-			<posy>85</posy>
+			<posy>60</posy>
 			<width>1000</width>
-			<height>680</height>
+			<height>520</height>
 			<onup>50</onup>
 			<onleft>50</onleft>
 			<onright>50</onright>
@@ -579,7 +579,7 @@
 					<bordersize>8</bordersize>
 				</control>
 				<control type="label">
-					<posx>125</posx>
+					<posx>10</posx>
 					<posy>230</posy>
 					<width>230</width>
 					<height>30</height>
@@ -601,14 +601,14 @@
 					<bordersize>8</bordersize>
 				</control>
 				<control type="label">
-					<posx>125</posx>
+					<posx>10</posx>
 					<posy>230</posy>
 					<width>230</width>
 					<height>30</height>
 					<font>font12</font>
 					<align>center</align>
 					<aligny>center</aligny>
-					<textcolor>black</textcolor>
+					<textcolor>blue</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
