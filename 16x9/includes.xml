@@ -81,6 +81,23 @@
             </control>
         </control>
     </include>
+
+    <!-- diffused now playing artist background --> 
+    <include name="NowPlayingFanart">
+        <control type="image">
+            <description>Now Playing Fanart</description>
+            <left>0</left>
+            <top>0</top>
+            <width>1280</width>
+            <height>720</height>
+            <aspectratio>scale</aspectratio>
+            <texture>$INFO[MusicPlayer.Property(Fanart_image)]</texture>
+            <colordiffuse>40FFFFFF</colordiffuse>
+            <visible>Player.HasAudio + !Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <include>VisibleFadeEffect</include>
+        </control>
+    </include>
+
      
     <include name="Time">
         <control type="group">

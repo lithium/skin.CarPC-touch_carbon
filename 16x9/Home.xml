@@ -5,22 +5,7 @@
     <defaultcontrol always="true">4250</defaultcontrol>
     <controls>
         <include>CommonBackground</include>
-
-        <!-- diffused now playing artist background --> 
-        <control type="image">
-            <description>Now Playing Fanart</description>
-            <left>0</left>
-            <top>0</top>
-            <width>1280</width>
-            <height>720</height>
-            <aspectratio>scale</aspectratio>
-            <texture>$INFO[MusicPlayer.Property(Fanart_image)]</texture>
-            <colordiffuse>30FFFFFF</colordiffuse>
-            <visible>Player.HasAudio + !Skin.HasSetting(HideHomeNowPlaying)</visible>
-            <include>VisibleFadeEffect</include>
-        </control>
-
-
+        <include>NowPlayingFanart</include>
 
         <control type="videowindow">
             <posx>0</posx>

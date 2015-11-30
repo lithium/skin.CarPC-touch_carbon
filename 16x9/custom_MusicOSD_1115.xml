@@ -6,6 +6,7 @@
 	<onunload>Skin.Reset(MediaSubMenuVisible)</onunload>
 	<controls>
 		<include>CommonBackground</include>
+    <include>NowPlayingFanart</include>
 		<include>PlayerControlCommons</include>
 	</controls>
 </window>
