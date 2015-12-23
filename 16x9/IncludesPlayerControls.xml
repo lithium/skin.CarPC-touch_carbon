@@ -990,5 +990,30 @@
 			</control>
 		</control>
 		<include>HomeButtonCommons</include>
+
+
+		<!-- invisible overlay buttons for next/previous !-->
+		<control type="group">
+			<posx>0</posx>
+			<posy>80</posy>
+			<control type="button">
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>530</height>
+				<width>300</width>
+				<onclick>PlayerControl(previous)</onclick>
+				<colordiffuse>00FFFFFF</colordiffuse>
+			</control>
+			<control type="button">
+				<posx>300r</posx>
+				<posy>0</posy>
+				<height>530</height>
+				<width>300</width>
+				<onclick>PlayerControl(next)</onclick>
+				<colordiffuse>00FFFFFF</colordiffuse>
+			</control>
+		</control>
+
+
 	</include>
 </includes>
