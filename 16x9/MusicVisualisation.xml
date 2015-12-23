@@ -9,6 +9,29 @@
 			<height>ScreenHeight</height>
 			<texture>black.png</texture>
 		</control>
+<!-- 
+		<control type="image">
+			<description>artist background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>ScreenWidth</width>
+			<height>ScreenHeight</height>
+			<colordiffuse>AAFFFFFF</colordiffuse>
+			<texture>$INFO[MusicPlayer.Property(Fanart_image)]</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+ -->
+		<control type="image">
+			<description>album cover image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>ScreenWidth</width>
+			<height>ScreenHeight</height>
+			<colordiffuse>55FFFFFF</colordiffuse>
+			<texture>$INFO[MusicPlayer.Cover]</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
 		<control type="visualisation">
 			<description>visualisation</description>
 			<posx>0</posx>

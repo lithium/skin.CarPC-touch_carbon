@@ -92,7 +92,7 @@
             <height>720</height>
             <aspectratio>scale</aspectratio>
             <texture>$INFO[MusicPlayer.Property(Fanart_image)]</texture>
-            <colordiffuse>40FFFFFF</colordiffuse>
+            <colordiffuse>55FFFFFF</colordiffuse>
             <visible>Player.HasAudio + !Skin.HasSetting(HideHomeNowPlaying)</visible>
             <include>VisibleFadeEffect</include>
         </control>
@@ -818,35 +818,45 @@
             <posx>0</posx>
             <posy>0</posy>
             <control type="label">
-                <visible>true</visible>
-                <posx>0r</posx>
-                <posy>0</posy>
+                <visible>!Window.IsVisible(120)</visible>
+                <posx>100</posx>
+                <posy>208r</posy>
                 <width>ScreenWidth</width>
                 <height>52</height>
                 <font>font40_title</font>
                 <textcolor>white</textcolor>
                 <selectedcolor>selected</selectedcolor>
-                <align>right</align>
+                <align>left</align>
                 <aligny>center</aligny>
                 <info>MusicPlayer.Artist</info>
-                <scrollspeed>50</scrollspeed>
-                <scrollsuffix> - </scrollsuffix>
             </control>
             <control type="label">
-                <visible>true</visible>
-                <posx>0r</posx>
-                <posy>37</posy>
+                <visible>!Window.IsVisible(120)</visible>
+                <posx>100</posx>
+                <posy>156r</posy>
                 <width>ScreenWidth</width>
                 <height>52</height>
                 <font>font40_title</font>
                 <textcolor>white</textcolor>
                 <selectedcolor>selected</selectedcolor>
-                <align>right</align>
+                <align>left</align>
                 <aligny>center</aligny>
-                <info>MusicPlayer.Title</info>
-                <scrollspeed>50</scrollspeed>
-                <scrollsuffix> - </scrollsuffix>
+                <label>"$INFO[MusicPlayer.Title]"</label>
             </control>
+            <control type="label">
+                <visible>!Window.IsVisible(120)</visible>
+                <posx>100</posx>
+                <posy>104r</posy>
+                <width>ScreenWidth</width>
+                <height>52</height>
+                <font>font40_title</font>
+                <textcolor>white</textcolor>
+                <selectedcolor>selected</selectedcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <info>MusicPlayer.Year</info>
+            </control>
+
             <control type="label">
                 <visible>true</visible>
                 <posx>0r</posx>

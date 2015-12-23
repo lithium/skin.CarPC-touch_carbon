@@ -312,7 +312,7 @@
                 <top>180</top>
                 <width>200</width>
                 <height>200</height>
-                <info>MusicPlayer.Cover</info>
+                <texture>$INFO[MusicPlayer.Cover]</texture>
                 <aspectratio></aspectratio>
                 <bordertexture>ThumbBorderGrey.png</bordertexture>
                 <bordersize>1</bordersize>
