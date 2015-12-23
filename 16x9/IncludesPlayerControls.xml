@@ -755,12 +755,12 @@
 					<icon>icon_refresh_w.png</icon>
 				</item>-->
 				
-				<item>
+<!-- 				<item>
 					<label>1036</label>
 					<onclick>ActivateWindow(Favourites)</onclick>
 					<icon>icon_favourites_w.png</icon>
 				</item>
-				<item>
+ -->				<item>
 					<label>31200</label>
 					<onclick>Back</onclick>
 					<icon>icon_back_w.png</icon>
