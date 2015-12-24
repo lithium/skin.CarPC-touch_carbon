@@ -943,6 +943,24 @@
                 <onup>Control.SetFocus(605)</onup>
                 <ondown>Control.SetFocus(602)</ondown>
                 <onclick>PlayerControl(Stop)</onclick>
+                <visible>![Window.IsVisible(120) | Window.IsVisible(1115)]</visible>
+            </control>
+            <control type="button" id="604">
+                <posx>180</posx>
+                <posy>4</posy>
+                <width>82</width>
+                <height>82</height>
+                <label>31352</label>
+                <font>-</font>
+                <texturefocus>OSDStopFO.png</texturefocus>
+                <texturenofocus>OSDStopNF.png</texturenofocus>
+                <onleft>Control.SetFocus(602)</onleft>
+                <onright>Control.SetFocus(605)</onright>
+                <onup>Control.SetFocus(605)</onup>
+                <ondown>Control.SetFocus(602)</ondown>
+                <visible>Window.IsVisible(120) | Window.IsVisible(1115)</visible>
+                <onclick>PlayerControl(Stop)</onclick>
+                <onclick>ActivateWindow(Home)</onclick>
             </control>
             <control type="button" id="605">
                 <posx>270</posx>
