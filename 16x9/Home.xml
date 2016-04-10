@@ -43,12 +43,15 @@
 
     <!-- Left Side Buttons --> 
 
-        <!-- Top 100 -->
+        <!-- Party Mode -->
         <control type="group" id="4200">
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>20</posx>
             <posy>135</posy>
+
+            <!-- party mode: off -->
             <control type="button" id="4201">
+                <visible>!MusicPartyMode.Enabled</visible>
                 <ondown>Control.SetFocus(4211)</ondown>
                 <onup>Control.SetFocus(600)</onup>
                 <onleft>Control.SetFocus()</onleft>
@@ -60,9 +63,8 @@
                 <height>130</height>
                 <texturenofocus>home_1.png</texturenofocus>
                 <texturefocus border="5">home_1_p.png</texturefocus>
-                <onclick>ActivateWindow(Music,Top100Songs)</onclick>
+                <onclick>PlayerControl(Partymode(music))</onclick>
             </control>
-            
             <control type="image">
                 <description>Left Side Top Button Image</description>
                 <posx>30</posx>
@@ -72,12 +74,44 @@
                 <texture>icon_playlistmusic.png</texture>
             </control>
             <control type="label">
+                <visible>!MusicPartyMode.Enabled</visible>
                 <description>Left Side Top Button Label</description>
                 <posx>120</posx>
                 <posy>22</posy>
                 <height>90</height>
                 <width>250</width>
-                <label>Top 100</label>
+                <label>Party On</label>
+                <aligny>center</aligny>
+                <align>left</align>
+                <font>font40_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+            </control>
+
+            <!-- party mode: on -->
+            <control type="button" id="4202">
+                <visible>MusicPartyMode.Enabled</visible>
+                <ondown>Control.SetFocus(4211)</ondown>
+                <onup>Control.SetFocus(600)</onup>
+                <onleft>Control.SetFocus()</onleft>
+                <onright>Control.SetFocus(4251)</onright>
+                <description>Left Side Top Button</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>540</width>
+                <height>130</height>
+                <texturenofocus>home_1.png</texturenofocus>
+                <texturefocus border="5">home_1_p.png</texturefocus>
+                <onclick>PlayerControl(Partymode(music))</onclick>
+                <onclick>PlayerControl(Stop)</onclick>
+            </control>
+            <control type="label">
+                <visible>MusicPartyMode.Enabled</visible>
+                <description>Left Side Top Button Label</description>
+                <posx>120</posx>
+                <posy>22</posy>
+                <height>90</height>
+                <width>250</width>
+                <label>No Party</label>
                 <aligny>center</aligny>
                 <align>left</align>
                 <font>font40_title</font>
