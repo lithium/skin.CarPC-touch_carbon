@@ -99,6 +99,15 @@
 					<scroll>false</scroll>
           <wrapmultiline>true</wrapmultiline>
 				</control>
+        <control type="button" id="4221">
+					<posx>625</posx>
+					<posy>275</posy>
+					<width>620</width>
+					<height>175</height>
+          <colordiffuse>00FFFFFF</colordiffuse>
+          <onclick>ActivateWindow(Music,$INFO[Player.Folderpath])</onclick>
+        </control>
+
 			
 				<!-- Album -->	
 				<control type="label">

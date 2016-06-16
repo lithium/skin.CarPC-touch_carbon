@@ -64,6 +64,7 @@
                 <texturenofocus>home_1.png</texturenofocus>
                 <texturefocus border="5">home_1_p.png</texturefocus>
                 <onclick>PlayerControl(Partymode(music))</onclick>
+                <onclick>ActivateWindow(1115)</onclick>
             </control>
             <control type="image">
                 <description>Left Side Top Button Image</description>
