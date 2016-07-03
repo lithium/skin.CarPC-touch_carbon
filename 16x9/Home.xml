@@ -43,15 +43,12 @@
 
     <!-- Left Side Buttons --> 
 
-        <!-- Party Mode -->
+        <!-- Party Mode Playlist 1 -->
         <control type="group" id="4200">
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>20</posx>
             <posy>135</posy>
-
-            <!-- party mode: off -->
             <control type="button" id="4201">
-                <visible>!MusicPartyMode.Enabled</visible>
                 <ondown>Control.SetFocus(4211)</ondown>
                 <onup>Control.SetFocus(600)</onup>
                 <onleft>Control.SetFocus()</onleft>
@@ -63,64 +60,24 @@
                 <height>130</height>
                 <texturenofocus>home_1.png</texturenofocus>
                 <texturefocus border="5">home_1_p.png</texturefocus>
-                <onclick>PlayerControl(Partymode(music))</onclick>
+                <onclick>PlayerControl(Partymode(special://musicplaylists/$INFO[Skin.String(PartyModePlaylist1)].xsp))</onclick>
                 <onclick>ActivateWindow(1115)</onclick>
             </control>
-            <control type="image">
-                <description>Left Side Top Button Image</description>
+            <control type="label">
+                <description>Left Side Top Button Label</description>
                 <posx>30</posx>
-                <posy>30</posy>
-                <width>80</width>
-                <height>80</height>
-                <texture>icon_playlistmusic.png</texture>
-            </control>
-            <control type="label">
-                <visible>!MusicPartyMode.Enabled</visible>
-                <description>Left Side Top Button Label</description>
-                <posx>120</posx>
                 <posy>22</posy>
                 <height>90</height>
-                <width>250</width>
-                <label>Party On</label>
+                <width>380</width>
+                <label>$INFO[Skin.String(PartyModePlaylist1)]</label>
                 <aligny>center</aligny>
-                <align>left</align>
-                <font>font40_title</font>
-                <textcolor>FFFFFFFF</textcolor>
-            </control>
-
-            <!-- party mode: on -->
-            <control type="button" id="4202">
-                <visible>MusicPartyMode.Enabled</visible>
-                <ondown>Control.SetFocus(4211)</ondown>
-                <onup>Control.SetFocus(600)</onup>
-                <onleft>Control.SetFocus()</onleft>
-                <onright>Control.SetFocus(4251)</onright>
-                <description>Left Side Top Button</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>540</width>
-                <height>130</height>
-                <texturenofocus>home_1.png</texturenofocus>
-                <texturefocus border="5">home_1_p.png</texturefocus>
-                <onclick>PlayerControl(Partymode(music))</onclick>
-                <onclick>PlayerControl(Stop)</onclick>
-            </control>
-            <control type="label">
-                <visible>MusicPartyMode.Enabled</visible>
-                <description>Left Side Top Button Label</description>
-                <posx>120</posx>
-                <posy>22</posy>
-                <height>90</height>
-                <width>250</width>
-                <label>No Party</label>
-                <aligny>center</aligny>
-                <align>left</align>
+                <align>center</align>
                 <font>font40_title</font>
                 <textcolor>FFFFFFFF</textcolor>
             </control>
         </control>
        
-        <!-- Artist --> 
+        <!-- Party Mode Playlist 2 --> 
         <control type="group" id="4220">
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>20</posx>
@@ -136,31 +93,24 @@
                 <height>130</height>
                 <texturenofocus >home_2.png</texturenofocus>
                 <texturefocus border="5">home_2_p.png</texturefocus>
-                <onclick>ActivateWindow(Music,Artists)</onclick>
-            </control>
-            <control type="image">
-                <description>Left Side Middle Button Image</description>
-                <posx>30</posx>
-                <posy>30</posy>
-                <width>80</width>
-                <height>80</height>
-                <texture>icon_playlistmusic.png</texture>
+                <onclick>PlayerControl(Partymode(special://musicplaylists/$INFO[Skin.String(PartyModePlaylist2)].xsp))</onclick>
+                <onclick>ActivateWindow(1115)</onclick>
             </control>
             <control type="label">
                 <description>Left Side Middle Buttton Label</description>
-                <posx>120</posx>
+                <posx>30</posx>
                 <posy>22</posy>
                 <height>90</height>
-                <width>250</width>
-                <label>Artists</label>
+                <width>380</width>
+                <label>$INFO[Skin.String(PartyModePlaylist2)]</label>
                 <aligny>center</aligny>
-                <align>left</align>
+                <align>center</align>
                 <font>font40_title</font>
                 <textcolor>FFFFFFFF</textcolor>
             </control>
         </control>
 
-        <!-- Genres -->
+        <!-- Party Mode Playlist 3 --> 
         <control type="group" id="4240">
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>20</posx>
@@ -176,24 +126,16 @@
                 <height>130</height>
                 <texturenofocus >home_3.png</texturenofocus>
                 <texturefocus border="5">home_3_p.png</texturefocus>
-                <onclick>ActivateWindow(Music,Genres)</onclick>
-            </control>
-            <control type="image">
-                <description>Left Side Bottom Button Image</description>
-                <posx>30</posx>
-                <posy>30</posy>
-                <width>80</width>
-                <height>80</height>
-                <texture>icon_playlistmusic.png</texture>
+                <onclick>PlayerControl(Partymode(special://musicplaylists/$INFO[Skin.String(PartyModePlaylist3)].xsp))</onclick>
             </control>
             <control type="label">
                 <description>Left Side Bottom Button Label</description>
-                <posx>120</posx>
+                <posx>30</posx>
                 <posy>22</posy>
                 <height>90</height>
-                <width>250</width>
-                <label>Genres</label>
-                <align>left</align>
+                <width>380</width>
+                <label>$INFO[Skin.String(PartyModePlaylist3)]</label>
+                <align>center</align>
                 <aligny>center</aligny>
                 <font>font40_title</font>
                 <textcolor>FFFFFFFF</textcolor>

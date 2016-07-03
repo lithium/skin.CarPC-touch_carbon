@@ -328,7 +328,47 @@
 				<selected>!Skin.HasSetting(HideOSDButtonMediaInfo)</selected>
 			</control>
 
+			<control type="button" id="205">
+				<description>fifth item</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font24_title</font>
+				<focusedcolor>blue</focusedcolor>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>Party Mode Playlist 1:</label>
+				<label2>[COLOR=selected]$INFO[Skin.String(PartyModePlaylist1)][/COLOR]</label2>
+				<onclick>Skin.SetString(PartyModePlaylist1)</onclick>
+			</control>
 
+			<control type="button" id="206">
+				<description>sixth item</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font24_title</font>
+				<focusedcolor>blue</focusedcolor>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>Party Mode Playlist 2:</label>
+				<label2>[COLOR=selected]$INFO[Skin.String(PartyModePlaylist2)][/COLOR]</label2>
+				<onclick>Skin.SetString(PartyModePlaylist2)</onclick>
+			</control>
+			
+			<control type="button" id="207">
+				<description>seventh item</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font24_title</font>
+				<focusedcolor>blue</focusedcolor>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>Party Mode Playlist 3:</label>
+				<label2>[COLOR=selected]$INFO[Skin.String(PartyModePlaylist3)][/COLOR]</label2>
+				<onclick>Skin.SetString(PartyModePlaylist3)</onclick>
+			</control>
 		<!--
 			<control type="radiobutton" id="204">
 				<description>Button 3 Show Favourites</description>
