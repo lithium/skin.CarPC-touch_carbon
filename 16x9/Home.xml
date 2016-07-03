@@ -165,22 +165,14 @@
                 <texturefocus border="5">home_4_p.png</texturefocus>
                 <onclick>ActivateWindow(Music,MusicLibrary)</onclick>
             </control>
-            <control type="image">
-                <description>Music Button Image</description>
-                <posx>140r</posx>
-                <posy>30</posy>
-                <width>80</width>
-                <height>80</height>
-                <texture>icon-music.png</texture>
-            </control>
             <control type="label">
-                <description>Music label</description>
-                <posx>400</posx>
+                <description>Library label</description>
+                <posx>400r</posx>
                 <posy>22</posy>
                 <height>90</height>
-                <width>250</width>
+                <width>400</width>
                 <label>Library</label>
-                <align>right</align>
+                <align>center</align>
                 <aligny>center</aligny>
                 <font>font40_title</font>
                 <textcolor>FFFFFFFF</textcolor>
@@ -207,20 +199,12 @@
                 <texturefocus border="5">home_5_p.png</texturefocus>
                 <onclick>ActivateWindow(Music,Playlists)</onclick>
             </control>
-            <control type="image">
-                <description>Playlists Button Image</description>
-                <posx>140r</posx>
-                <posy>30</posy>
-                <width>80</width>
-                <height>80</height>
-                <texture>icon-music.png</texture>
-            </control>
             <control type="label">
                 <description>Playlists label</description>
-                <posx>40</posx>
+                <posx>400r</posx>
                 <posy>22</posy>
                 <height>90</height>
-                <width>250</width>
+                <width>380</width>
                 <label>Playlists</label>
                 <align>center</align>
                 <aligny>center</aligny>
@@ -249,20 +233,12 @@
                 <texturefocus border="5">home_6_p.png</texturefocus>
                 <onclick>RunScript(script.globalsearch)</onclick>
             </control>
-            <control type="image">
-                <description>search Button Image</description>
-                <posx>140r</posx>
-                <posy>30</posy>
-                <width>80</width>
-                <height>80</height>
-                <texture>icon_keypad.png</texture>
-            </control>
             <control type="label">
                 <description>Search label</description>
-                <posx>200</posx>
+                <posx>400r</posx>
                 <posy>22</posy>
                 <height>90</height>
-                <width>250</width>
+                <width>400</width>
                 <label>Search</label>
                 <align>center</align>
                 <aligny>center</aligny>
