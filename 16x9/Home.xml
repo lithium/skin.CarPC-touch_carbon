@@ -60,7 +60,7 @@
                 <height>130</height>
                 <texturenofocus>home_1.png</texturenofocus>
                 <texturefocus border="5">home_1_p.png</texturefocus>
-                <onclick>PlayerControl(Partymode(special://musicplaylists/$INFO[Skin.String(PartyModePlaylist1)].xsp))</onclick>
+                <onclick>PlayerControl(Partymode(special://profile/playlists/music/$INFO[Skin.String(PartyModePlaylist1)].xsp))</onclick>
                 <onclick>ActivateWindow(1115)</onclick>
             </control>
             <control type="label">
@@ -93,7 +93,7 @@
                 <height>130</height>
                 <texturenofocus >home_2.png</texturenofocus>
                 <texturefocus border="5">home_2_p.png</texturefocus>
-                <onclick>PlayerControl(Partymode(special://musicplaylists/$INFO[Skin.String(PartyModePlaylist2)].xsp))</onclick>
+                <onclick>PlayerControl(Partymode(special://profile/playlists/music/$INFO[Skin.String(PartyModePlaylist2)].xsp))</onclick>
                 <onclick>ActivateWindow(1115)</onclick>
             </control>
             <control type="label">
@@ -126,7 +126,7 @@
                 <height>130</height>
                 <texturenofocus >home_3.png</texturenofocus>
                 <texturefocus border="5">home_3_p.png</texturefocus>
-                <onclick>PlayerControl(Partymode(special://musicplaylists/$INFO[Skin.String(PartyModePlaylist3)].xsp))</onclick>
+                <onclick>PlayerControl(Partymode(special://profile/playlists/music/$INFO[Skin.String(PartyModePlaylist3)].xsp))</onclick>
             </control>
             <control type="label">
                 <description>Left Side Bottom Button Label</description>
